@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <title>Tailwind grid</title>
+</head>
+
+<body class="container py-1 mx-auto">
+
+    <h1 class="text-5xl ">Columnas</h1>
+    <!-- gap es para ahcer una separacion entre las columans  -->
+    <!-- con col-gap-4 se le especifica que afecte solo a las collumnas -->
+    <!-- grid-cols 1 se le agrega por requisieto de tailwind siempre debe ir un valor por defecto -->
+    <div class="container mx-auto bg-blue-50 grid grid-cols-1 md:grid-cols-3 gap-8 my-5">
+        <div class="bg-blue-500 text-center text-white text-2xl border">Testin </div>
+        <div class="bg-blue-500 text-center text-white text-2xl border">Testin </div>
+        <div class="bg-blue-500 text-center text-white text-2xl border">Testin </div>
+        <div class="bg-blue-500 text-center text-white text-2xl border">Testin </div>
+    </div>
+    <!-- se pueden distribuoiir la comunas a gusto pero el maximo son 12 -->
+    <div class="container mx-auto bg-gray-200 grid grid-cols-4 gap-8 my-5">
+        <div class="bg-gray-500 text-center text-white text text-2xl border col-span-2">Testin A</div>
+        <div class="bg-gray-500 text-center text-white text-2xl border">Testin B</div>
+        <div class="bg-gray-500 text-center text-white text text-2xl border">Testin C</div>
+        <div class="bg-gray-500 text-center text-white text text-2xl border col-span-3">Testin D</div>
+    </div>
+
+    <!-- el col start funciona como un tipo de offeset -->
+    <!-- col end un offset inverso -1 o algo asi, no usar el 1 por recordar -1-->
+    <div class="container mx-auto bg-pink-200 grid grid-cols-4 gap-8 my-5">
+        <div class="bg-pink-500 text-center text-white text text-2xl border col-start-2">Testin A</div>
+        <div class="bg-pink-500 text-center text-white text-2xl border">Testin B</div>
+        <div class="bg-pink-500 text-center text-white text text-2xl border">Testin C</div>
+        <div class="bg-pink-500 text-center text-white text text-2xl border col-end-4">Testin D</div>
+    </div>
+
+    <h1 class="text-5xl ">Filas</h1>
+    <!-- lo mismo pero invertido  -->
+    <div class="mx-auto bg-green-200 grid grid-rows-4 gap-4">
+        <div class="bg-green-500 text-center text-white text text-2xl border row-span-2">Testin A</div>
+        <div class="bg-green-500 text-center text-white text-2xl border">Testin B</div>
+        <div class="bg-green-500 text-center text-white text text-2xl border">Testin C</div>
+        <div class="bg-green-500 text-center text-white text text-2xl border">Testin D</div>
+    </div>
+
+    <h1 class="text-5xl ">Filas y Columnas</h1>
+
+    <div class="mx-auto bg-purple-200 grid  grid-cols-4 grid-rows-4 gap-4 mb-2">
+        <div class="bg-purple-500 text-center text-white text text-2xl border">Testin A</div>
+        <div class="bg-purple-500 text-center text-white text-2xl border row-span-3">Testin B</div>
+        <div class="bg-purple-500 text-center text-white text text-2xl border col-span-2 row-span-4">Testin C</div>
+
+    </div>
+
+
+
+</body>
+
+</html>
