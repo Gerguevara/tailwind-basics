@@ -12,8 +12,7 @@
 <body class="container py-1 mx-auto">
 
     <h1 class="text-5xl ">Columnas</h1>
-    <!-- gap es para hacer una separacion entre las columans  -->
-    <!-- con col-gap-4 se le especifica que afecte solo a las collumnas -->
+    <!-- gap es para hacer una separacion entre las columans  --> 
     <!-- grid-cols 1 se le agrega por requisito de tailwind siempre debe ir un valor por defecto evitar problema de puntos muertos-->
     <div class="container mx-auto bg-blue-50 grid grid-cols-1 md:grid-cols-3 gap-8 my-5">
         <div class="bg-blue-500 text-center text-white text-2xl border">Testin </div>
@@ -30,7 +29,7 @@
     </div>
 
     <!-- el col start funciona como un tipo de offset -->
-    <!-- col end un offset inverso -1 o algo asi, no usar el 1 por recordar -1-->
+    <!-- col end un offset pero inverso -1 o algo asi, no usar el 1 por recordar -1-->
     <div class="container mx-auto bg-pink-200 grid grid-cols-4 gap-8 my-5">
         <div class="bg-pink-500 text-center text-white text text-2xl border col-start-2">Testin A</div>
         <div class="bg-pink-500 text-center text-white text-2xl border">Testin B</div>
@@ -39,7 +38,7 @@
     </div>
 
     <h1 class="text-5xl ">Filas</h1>
-    <!-- lo mismo pero invertido  -->
+    <!-- lo mismo que el anterior pero invertido  -->
     <div class="mx-auto bg-green-200 grid grid-rows-4 gap-4">
         <div class="bg-green-500 text-center text-white text text-2xl border row-span-2">Testin A</div>
         <div class="bg-green-500 text-center text-white text-2xl border">Testin B</div>
@@ -48,7 +47,7 @@
     </div>
 
     <h1 class="text-5xl ">Filas y Columnas</h1>
-
+    <!-- lSe pueden conbinar row y cols para trabajar juntas -->
     <div class="mx-auto bg-purple-200 grid  grid-cols-4 grid-rows-4 gap-4 mb-2">
         <div class="bg-purple-500 text-center text-white text text-2xl border">Testin A</div>
         <div class="bg-purple-500 text-center text-white text-2xl border row-span-3">Testin B</div>
