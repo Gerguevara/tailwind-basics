@@ -12,16 +12,16 @@
 <body class="container py-1 mx-auto">
 
     <h1 class="text-5xl ">Columnas</h1>
-    <!-- gap es para ahcer una separacion entre las columans  -->
+    <!-- gap es para hacer una separacion entre las columans  -->
     <!-- con col-gap-4 se le especifica que afecte solo a las collumnas -->
-    <!-- grid-cols 1 se le agrega por requisieto de tailwind siempre debe ir un valor por defecto -->
+    <!-- grid-cols 1 se le agrega por requisito de tailwind siempre debe ir un valor por defecto evitar problema de puntos muertos-->
     <div class="container mx-auto bg-blue-50 grid grid-cols-1 md:grid-cols-3 gap-8 my-5">
         <div class="bg-blue-500 text-center text-white text-2xl border">Testin </div>
         <div class="bg-blue-500 text-center text-white text-2xl border">Testin </div>
         <div class="bg-blue-500 text-center text-white text-2xl border">Testin </div>
         <div class="bg-blue-500 text-center text-white text-2xl border">Testin </div>
     </div>
-    <!-- se pueden distribuoiir la comunas a gusto pero el maximo son 12 -->
+    <!-- se pueden distribuir las columnas a gusto pero el maximo son 12 -->
     <div class="container mx-auto bg-gray-200 grid grid-cols-4 gap-8 my-5">
         <div class="bg-gray-500 text-center text-white text text-2xl border col-span-2">Testin A</div>
         <div class="bg-gray-500 text-center text-white text-2xl border">Testin B</div>
@@ -29,7 +29,7 @@
         <div class="bg-gray-500 text-center text-white text text-2xl border col-span-3">Testin D</div>
     </div>
 
-    <!-- el col start funciona como un tipo de offeset -->
+    <!-- el col start funciona como un tipo de offset -->
     <!-- col end un offset inverso -1 o algo asi, no usar el 1 por recordar -1-->
     <div class="container mx-auto bg-pink-200 grid grid-cols-4 gap-8 my-5">
         <div class="bg-pink-500 text-center text-white text text-2xl border col-start-2">Testin A</div>
